@@ -11,9 +11,10 @@
 * It should return the null value.
 * @return {null} - 'useless'.
 */
-
 //your code here
-
+function uselessFunction(){
+	return null;
+}
 //end your code
 
 var bar = 'not a function';
@@ -30,6 +31,18 @@ var barType = typeof bar;
 */
 
 //your code here
+bar = function (doubleArray){
+    for(var i = 0; i < doubleArray.length; i++)
+    {
+        if (doubleArray[i] == NaN)
+            return false;
+        try{doubleArray[i] = doubleArray[i] * 2;}
+        catch(e){
+            return false;
+        }
+    }
+    return true;
+	}
 
 //end your code
 
@@ -66,5 +79,8 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
+function parseGit(logArray, returnArray) {
 
+
+}
 //end your code
