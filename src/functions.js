@@ -80,7 +80,12 @@ function GitLog(hash, date, message) {
 
 //your code here
 function parseGit(logArray, returnArray) {
-
+    var GitLog;
+    var results = [];
+    for (i = 0; i < logArray.length; i++)
+    {
+        GitLog = 
+    }
 
 }
 //end your code
