@@ -16,7 +16,7 @@ function variableModification(a) {
   //your code here
     plus5 = 5 + a;
     asString = String(a);
-    yourNumberIs = "Your Number is 'a'";
+    yourNumberIs = "Your Number is " + a;
   //end your code
   return [plus5, asString, yourNumberIs, a];
 }
@@ -30,7 +30,7 @@ return true if b is a primitive string value (also known as a string literal),
 false otherwise
 */
 function isString(b) {
-    if (b.isString) {
+    if (typeof b === 'string') {
         return true;
     }
     else {
@@ -46,7 +46,7 @@ Output:
 return true if c is null, false otherwise
 */
 function isNull(c) {
-    if (c.isNull) {
+    if (c === null) {
         return true;
     }
     else {
