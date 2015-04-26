@@ -81,13 +81,12 @@ function GitLog(hash, date, message) {
 
 //your code here
 function parseGit(logArray, returnArray) {
-    var GitLog;
-    var results = [];
     for (i = 0; i < logArray.length; i++)
-    {
+        var temp = logArray[i].splice(1, 1);
+   
+    var dateString = "";
+    dateString.concat(temp[1], temp[2]);
 
-        
-    }
 
 }
 //end your code
