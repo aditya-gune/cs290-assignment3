@@ -34,12 +34,13 @@ var barType = typeof bar;
 bar = function (doubleArray){
     for(var i = 0; i < doubleArray.length; i++)
     {
-        if (doubleArray[i] == NaN)
+        if (isNaN(doubleArray[i]))
             return false;
-        try{doubleArray[i] = doubleArray[i] * 2;}
+        else try{doubleArray[i] = doubleArray[i] * 2;}
         catch(e){
             return false;
         }
+        
     }
     return true;
 	}
@@ -84,7 +85,8 @@ function parseGit(logArray, returnArray) {
     var results = [];
     for (i = 0; i < logArray.length; i++)
     {
-        GitLog = 
+
+        
     }
 
 }
