@@ -10,7 +10,7 @@
 
 function returnObjectLiteral() {
   //your code here
-  return undefined; //Modify ONLY this line
+    return literal = { id: type, value: Algorithm };
   //end your code
 }
 
@@ -38,6 +38,10 @@ function returnObjectLiteral() {
 */
 
 //your code here
+var log = new MessageLog("test");
+log.logMessage("Hello Bob how are you", 0);
+log.logMessage("I'm doing fine Bob, how are you", 1);
+log.getSentMessage(0);
 
 //end your code
 
