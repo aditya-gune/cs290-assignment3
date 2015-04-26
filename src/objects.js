@@ -38,11 +38,16 @@ function returnObjectLiteral() {
 */
 
 //your code here
-var log = new MessageLog("test");
-log.logMessage("Hello Bob how are you", 0);
-log.logMessage("I'm doing fine Bob, how are you", 1);
-log.getSentMessage(0);
-
+function MessageLog(newUser) {
+    this.user = newUser;
+    this.sentMsgs = [];
+    this.received = [];
+    this.logMessage = function (newMsg, direction) { }
+    this.getSentMessage = function (n) {return this.sentMsgs[n]}
+    this.totalSent = function () { return this.sentMsgs.length}
+    this.totalReceived = function () { return this.received.length }
+    this.lastReceivedMessage = lastRecievedMessage;
+}
 //end your code
 
 /**
@@ -51,7 +56,9 @@ log.getSentMessage(0);
 * received.
 */
 //your code here
-
+function lastRecievedMessage(){
+    return MessageLog.getSentMessage[0];
+}
 //end your code
 
 /**
